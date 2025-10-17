@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr><center><h1>Logical Operators</h1></center><hr>
+
+<script>
+// AND OPERATOR
+let age=20
+let hasLicense = false
+if (age>=18 && hasLicense) {
+    console.log("You can drive a car!")
+} else {
+    console.log("You cannot drive a car!")
+}
+
+// OR OPERATOR
+let isBirthday = true
+let goodGrades = false
+
+if (isBirthday || goodGrades) {
+    console.log("You can have a Party!")
+} else {
+    console.log("You cannot have a Party at all!!!")
+}
+
+
+// NOT OPERATOR
+
+let isWeekend = false
+if (!isWeekend) {
+    console.log("Its a hectic school day!!")
+} else {
+    console.log("You can have a funtime!!")
+}
+
+// FUNCTION
+
+function sayHello() {
+    console.log("Hi Reader")
+}
+
+sayHello()
+
+//FUNCTION PARAMETERS
+function calculateBMI(weight,height) {
+    console.log(weight,height)
+    let BMI = weight / (height)**2
+    console.log(BMI)
+}
+//FUNCTION ARGUMENT
+calculateBMI(75,1.73)
+
+function calculatePercentage(obtMarks,totalMarks) {
+    console.log(obtMarks,totalMarks)
+    let Percentage=(obtMarks/totalMarks)*100
+    console.log(Percentage)
+}
+calculatePercentage(709,850)
+
+//Function Return Variable
+
+function calculateSpeed(distance,time) {
+    let Speed = distance/time
+    return Speed
+}
+let Speed=calculateSpeed (240,5)
+alert(Speed)
+
+
+
+function ageEligibility(birthYear){
+let age = 2025-birthYear
+if (age>=18) {
+    return true
+} else {
+    return false
+}
+} 
+
+let myEligibility=ageEligibility(2011)
+console.log(myEligibility)
+
+
+//HomeWork Login Function
+
+let email = true
+let password = false
+
+if (email || password) {
+    console.log("You can add recovery email!")
+} else {
+    console.log("You cannot add recovery mail!")
+}
+
+</script>
+</body>
+</html>
